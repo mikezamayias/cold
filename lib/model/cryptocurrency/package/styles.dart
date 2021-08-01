@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
 /// Package styles
-class PackageStyles {
+class PackageStyle {
   static Text getTextTitle(String title) => new Text(
         title,
         style: TextStyle(

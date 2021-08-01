@@ -1,22 +1,22 @@
 import 'dart:convert';
-import 'package:cold/model/coin/coin_price_changes.dart';
+import 'package:cold/model/cryptocurrency/coin/coin_price_changes.dart';
 
 class Coin {
-  String? id;
-  String? currency;
-  String? symbol;
-  String? name;
-  String? logoUrl;
-  String? price;
-  String? priceDate;
-  String? priceTimestamp;
-  String? circulatingSupply;
-  String? maxSupply;
-  String? marketCap;
-  String? rank;
-  String? high;
-  String? highTimestamp;
-  CoinPriceChanges? coinPriceChanges;
+  String? id = "";
+  String? currency = "";
+  String? symbol = "";
+  String? name = "";
+  String? logoUrl = "";
+  String? price = "";
+  String? priceDate = "";
+  String? priceTimestamp = "";
+  String? circulatingSupply = "";
+  String? maxSupply = "";
+  String? marketCap = "";
+  String? rank = "";
+  String? high = "";
+  String? highTimestamp = "";
+  CoinPriceChanges? coinPriceChanges = new CoinPriceChanges();
 
   Coin({
     this.id,
@@ -33,6 +33,7 @@ class Coin {
     this.rank,
     this.high,
     this.highTimestamp,
+    this.coinPriceChanges,
   });
 
   Map<String, dynamic> toMap() => {
